@@ -18,9 +18,9 @@ module.exports = {
   rules: {},
   overrides: [
     {
-      files: '*.vue',
-      globals: {
-        todoEventBus: 'readable'
+      files: ['**/*.spec.js', '**/*.spec.jsx'],
+      env: {
+        jest: true
       }
     }
   ]
