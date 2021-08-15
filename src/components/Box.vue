@@ -22,35 +22,35 @@ import colors from '@/data/pie-colors'
 export default {
   name: 'Box',
   components: {
-    Pie,
+    Pie
   },
   computed: {
     percentageColor() {
       return colors.find((color) => this.percentage > color.min).highlight
-    },
+    }
   },
   props: {
     id: {
       type: String,
-      default: '',
+      default: ''
     },
     image: {
       type: String,
-      default: '',
+      default: ''
     },
     percentage: {
       type: String,
-      default: '',
+      default: ''
     },
     title: {
       type: String,
-      default: '',
+      default: ''
     },
     date: {
       type: String,
-      default: '',
-    },
-  },
+      default: ''
+    }
+  }
 }
 </script>
 

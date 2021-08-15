@@ -11,18 +11,18 @@ import Button from '@/components/Button'
 export default {
   name: 'Search',
   components: {
-    Button,
+    Button
   },
   props: {
     placeholder: {
       type: String,
-      default: '',
+      default: ''
     },
     type: {
       type: String,
-      default: 'text',
-    },
-  },
+      default: 'text'
+    }
+  }
 }
 </script>
 

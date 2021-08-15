@@ -5,7 +5,7 @@
         background ? `background:${background}` : '',
         color ? `color:${color}` : '',
         weight ? `font-weight:${weight}` : '',
-        width ? `width:${width}` : '',
+        width ? `width:${width}` : ''
       ]"
     >
       <slot></slot>
@@ -19,25 +19,25 @@ export default {
   props: {
     background: {
       type: String,
-      default: 'rgba(var(--tmdbDarkBlue), 1);',
+      default: 'rgba(var(--tmdbDarkBlue), 1);'
     },
     color: {
       type: String,
-      default: '#fff',
+      default: '#fff'
     },
     weight: {
       type: String,
-      default: '700',
+      default: '700'
     },
     width: {
       type: String,
-      default: '46px',
+      default: '46px'
     },
     loading: {
       type: Boolean,
-      default: false,
-    },
-  },
+      default: false
+    }
+  }
 }
 </script>
 

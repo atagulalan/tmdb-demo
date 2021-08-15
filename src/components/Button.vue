@@ -4,7 +4,7 @@
       :style="[
         background ? `background:${background}` : '',
         color ? `color:${color}` : '',
-        weight ? `font-weight:${weight}` : '',
+        weight ? `font-weight:${weight}` : ''
       ]"
     >
       <slot></slot>
@@ -19,21 +19,21 @@ export default {
     background: {
       type: String,
       default:
-        'linear-gradient(to right, rgba(var(--tmdbLightGreen), 1) 0%, rgba(var(--tmdbLightBlue), 1) 100%);',
+        'linear-gradient(to right, rgba(var(--tmdbLightGreen), 1) 0%, rgba(var(--tmdbLightBlue), 1) 100%);'
     },
     color: {
       type: String,
-      default: '#fff',
+      default: '#fff'
     },
     weight: {
       type: String,
-      default: '700',
+      default: '700'
     },
     loading: {
       type: Boolean,
-      default: false,
-    },
-  },
+      default: false
+    }
+  }
 }
 </script>
 

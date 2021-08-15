@@ -16,7 +16,7 @@ export default {
   name: 'Scroller',
   data() {
     return {
-      scroll: 0,
+      scroll: 0
     }
   },
   mounted() {
@@ -28,14 +28,14 @@ export default {
   methods: {
     handleScroll(event) {
       this.scroll = parseInt(event.currentTarget.scrollLeft)
-    },
+    }
   },
   props: {
     background: {
       type: String,
-      default: '',
-    },
-  },
+      default: ''
+    }
+  }
 }
 </script>
 

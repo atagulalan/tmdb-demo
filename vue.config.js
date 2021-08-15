@@ -4,5 +4,5 @@ module.exports = {
       args[0].title = 'TMDB Clone'
       return args
     })
-  },
+  }
 }

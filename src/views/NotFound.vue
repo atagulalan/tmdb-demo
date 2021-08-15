@@ -16,8 +16,8 @@ import Button from '@/components/Button'
 export default {
   name: 'NotFound',
   components: {
-    Button,
-  },
+    Button
+  }
 }
 </script>
 

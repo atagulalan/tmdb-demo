@@ -7,24 +7,24 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: Home
   },
   {
     path: '/movie/:id',
     name: 'Movie',
-    component: Movie,
+    component: Movie
   },
   // TODO : Maybe seperate TVShow from Movie
   {
     path: '/:catchAll(.*)',
     name: '404',
-    component: NotFound,
-  },
+    component: NotFound
+  }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes,
+  routes
 })
 
 export default router

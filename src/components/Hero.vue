@@ -20,18 +20,18 @@ import Search from './Search.vue'
 export default {
   name: 'Hero',
   components: {
-    Search,
+    Search
   },
   props: {
     title: {
       type: String,
-      default: 'Title',
+      default: 'Title'
     },
     subtitle: {
       type: String,
-      default: 'Subtitle',
-    },
-  },
+      default: 'Subtitle'
+    }
+  }
 }
 </script>
 
