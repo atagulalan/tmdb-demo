@@ -117,8 +117,9 @@ export default {
     }
 
     .userSection {
+      margin-right: 8px;
       ul li {
-        margin-left: 28px;
+        margin-left: 26px;
       }
 
       button {
@@ -150,6 +151,7 @@ export default {
         transition: 0.3s background, 0.3s color;
         cursor: pointer;
         font-weight: 600;
+        font-size: 14px;
 
         &:hover {
           background: white;

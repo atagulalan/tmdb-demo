@@ -26,8 +26,20 @@ html {
 * {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+input,
+textarea {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  line-height: 1;
 }
 
 button {
@@ -44,6 +56,11 @@ button {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.align-center {
+  height: 100%;
+  align-items: center;
 }
 </style>
 
