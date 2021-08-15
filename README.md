@@ -4,9 +4,9 @@ Ata Gülalan'ın SabancıDX için hazırladığı demo.
 
 ### [Canlı Demo: tmdb.xava.me](https://tmdb.xava.me)
 
-![Ana Sayfa](demo/home.jpg 'Ana Sayfa')
-![Film Detayı](demo/movie.jpg 'Film Detayı')
-![Lighthouse](demo/lighthouse.jpg 'Lighthouse')
+![Ana Sayfa](demo/home.png 'Ana Sayfa')
+![Film Detayı](demo/movie.png 'Film Detayı')
+![Lighthouse](demo/lighthouse.png 'Lighthouse')
 
 ## Yapılacaklar Listesi
 
