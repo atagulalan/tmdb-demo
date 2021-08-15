@@ -1,13 +1,13 @@
 <template>
   <div class="homePage">
     <Hero
-      title="Hoş Geldiniz."
-      subtitle="Milyonlarca film, TV şovu ve keşfedilecek kişi. Şimdi keşfedin."
+      title="Welcome."
+      subtitle="Millions of movies, TV shows and people to discover. Explore now."
     />
     <div class="content" v-if="boxes">
       <Scroller>
         <template v-slot:title>
-          <h2>Popüler Olanlar</h2>
+          <h2>What's Popular</h2>
         </template>
         <Box
           v-for="box in boxes"
@@ -62,7 +62,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .homePage {
   display: flex;
   flex-direction: column;

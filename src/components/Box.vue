@@ -1,25 +1,33 @@
 <template>
   <div class="boxComponent">
-    <a href="/tv/69050" :title="title">
-      <img loading="lazy" :src="image" :alt="title" />
-    </a>
-    <Pie class="boxPie" :percentage="percentage" color="#21D07A" />
+    <router-link :to="`/movie/${id}`" :title="title">
+      <img loading="lazy" :src="image" :alt="title" width="440" height="660" />
+    </router-link>
+    <Pie class="boxPie" :percentage="percentage" :color="percentageColor" />
     <div class="content">
       <h3 class="title">
-        <a href="/tv/69050" :title="title">{{ title }}</a>
+        <router-link :to="`/movie/${id}`" :title="title">
+          {{ title }}
+        </router-link>
       </h3>
-      <p>{{ date }}</p>
+      <p>{{ $dayjs(date).format('MMM DD, YYYY') }}</p>
     </div>
   </div>
 </template>
 
 <script>
 import Pie from '@/components/Pie'
+import colors from '@/data/pie-colors'
 
 export default {
   name: 'Box',
   components: {
     Pie,
+  },
+  computed: {
+    percentageColor() {
+      return colors.find((color) => this.percentage > color.min).highlight
+    },
   },
   props: {
     id: {
@@ -61,6 +69,8 @@ export default {
     border-radius: var(--imageBorderRadius);
     width: 100%;
     height: auto;
+    min-width: 150px;
+    min-height: 225px;
     object-fit: contain;
   }
 

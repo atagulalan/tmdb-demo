@@ -2,14 +2,16 @@
   <nav class="navBarComponent">
     <div class="container flex-center">
       <div class="navigationSection">
-        <div class="logo">
-          <img alt="TMDB" src="../assets/logo.svg" />
-        </div>
+        <router-link to="/">
+          <div class="logo">
+            <img alt="TMDB" src="../assets/logo.svg" />
+          </div>
+        </router-link>
         <ul>
-          <li><a href="#">Filmler</a></li>
-          <li><a href="#">Diziler</a></li>
-          <li><a href="#">Kişiler</a></li>
-          <li><a href="#">Daha Fazla</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">TV Shows</a></li>
+          <li><a href="#">People</a></li>
+          <li><a href="#">More</a></li>
         </ul>
       </div>
       <div class="userSection">
@@ -20,7 +22,7 @@
             </button>
           </li>
           <li class="languageSelector">
-            <button class="box">TR</button>
+            <button class="box">EN</button>
           </li>
           <li class="notifications">
             <button>

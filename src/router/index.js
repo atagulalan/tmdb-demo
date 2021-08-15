@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Movie from '../views/Movie.vue'
+import NotFound from '../views/NotFound.vue'
 
 const routes = [
   {
@@ -15,9 +16,9 @@ const routes = [
   },
   // TODO : Maybe seperate TVShow from Movie
   {
-    path: '/tv/:id',
-    name: 'TVShow',
-    component: Movie,
+    path: '/:catchAll(.*)',
+    name: '404',
+    component: NotFound,
   },
 ]
 

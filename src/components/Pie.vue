@@ -1,22 +1,20 @@
 <template>
   <div
     :class="['pieComponent', isMoreThan50 ? 'moreThan50' : 'lessThan50']"
-    :style="`font-size:${size}em;`"
+    :style="
+      `font-size:${size}em;
+       box-shadow: 0 0 0 ${outerWidth / 100}em ${background};
+       border-color: ${color};`
+    "
   >
     <label :style="`background:${background}`">{{ percentage }}</label>
-    <div
-      class="pie"
-      :style="
-        `border-color: ${color};
-        box-shadow: 0 0 0 ${outerWidth / 100}em ${background};`
-      "
-    >
-      <div class="background" :style="`border-width:${barWidth}em`"></div>
+    <div class="background" :style="`border-width:${barWidth}em`"></div>
+    <div class="pie">
       <div
         class="left"
         :style="
           `transform: rotate(${leftRotation}deg);
-      border-width:${barWidth}em`
+           border-width:${barWidth}em`
         "
       ></div>
       <div
@@ -80,11 +78,25 @@ export default {
   width: 1em;
   float: left;
   position: relative;
+  border-radius: 50%;
 
-  .pie {
+  .background {
     height: 100%;
     width: 100%;
     border-radius: 50%;
+    opacity: 0.3;
+    border: 2px solid;
+    border-color: inherit;
+  }
+
+  .pie {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-color: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     div {
       height: 100%;
@@ -96,11 +108,6 @@ export default {
       position: absolute;
       top: 0;
       border-color: inherit;
-
-      &.background {
-        clip: initial;
-        opacity: 0.3;
-      }
     }
   }
 
@@ -127,6 +134,10 @@ export default {
       // so we scale it down a bit
       transform: scale(0.7);
     }
+  }
+
+  &.lessThan50 .pie {
+    clip: rect(0, 1em, 1em, 0.5em);
   }
 
   &.lessThan50 .pie .left {

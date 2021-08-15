@@ -8,7 +8,7 @@
           <h1>{{ title }}</h1>
           <h2>{{ subtitle }}</h2>
         </div>
-        <Search placeholder="Film, dizi, kişi ara..." />
+        <Search placeholder="Search for a movie, tv show, person..." />
       </div>
     </div>
   </div>
