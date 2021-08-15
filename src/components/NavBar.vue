@@ -30,9 +30,7 @@
             </button>
           </li>
           <li class="avatar">
-            <button class="mockAvatar">
-              AG
-            </button>
+            <button class="mockAvatar">AG</button>
           </li>
           <li class="search">
             <button>
@@ -52,8 +50,8 @@
 export default {
   name: 'NavBar',
   props: {
-    activeItem: String,
-  },
+    activeItem: String
+  }
 }
 </script>
 

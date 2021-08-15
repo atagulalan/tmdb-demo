@@ -83,12 +83,12 @@ export default {
   data() {
     return {
       data: null,
-      movieId: this.$route.params.id,
+      movieId: this.$route.params.id
     }
   },
   components: {
     Pie,
-    CircularButton,
+    CircularButton
   },
   computed: {
     percentage() {
@@ -116,7 +116,7 @@ export default {
           .add(this.data.runtime, 'minutes')
           .format('H[h] m[m]') // 2h 12m
       )
-    },
+    }
   },
   mounted() {
     this.populateMovie()
@@ -134,8 +134,8 @@ export default {
         .catch((err) => {
           this.error = err.toString()
         })
-    },
-  },
+    }
+  }
 }
 </script>
 

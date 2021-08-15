@@ -35,11 +35,11 @@ export default {
   components: {
     Hero,
     Scroller,
-    Box,
+    Box
   },
   data() {
     return {
-      boxes: {},
+      boxes: {}
     }
   },
   mounted() {
@@ -57,8 +57,8 @@ export default {
         .catch((err) => {
           this.error = err.toString()
         })
-    },
-  },
+    }
+  }
 }
 </script>
 

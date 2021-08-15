@@ -15,7 +15,7 @@ import {
   faList,
   faBookmark,
   faStar,
-  faPlay,
+  faPlay
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(

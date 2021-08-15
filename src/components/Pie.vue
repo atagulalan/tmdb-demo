@@ -34,28 +34,28 @@ export default {
   props: {
     barWidth: {
       type: String,
-      default: '0.06',
+      default: '0.06'
     },
     size: {
       type: String,
-      default: '2.1',
+      default: '2.1'
     },
     percentage: {
       type: String,
-      default: '100',
+      default: '100'
     },
     color: {
       type: String,
-      default: '#fff',
+      default: '#fff'
     },
     background: {
       type: String,
-      default: '#081C22',
+      default: '#081C22'
     },
     outerWidth: {
       type: String,
-      default: '7',
-    },
+      default: '7'
+    }
   },
   computed: {
     isMoreThan50: function() {
@@ -67,8 +67,8 @@ export default {
     rightRotation: function() {
       let rotation = (this.percentage / 100) * 360
       return rotation > 180 ? 180 : rotation
-    },
-  },
+    }
+  }
 }
 </script>
 

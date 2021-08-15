@@ -1,7 +1,9 @@
 <template>
-  <NavBar />
-  <div class="page-content">
-    <router-view />
+  <div id="app">
+    <NavBar />
+    <div class="page-content">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -69,7 +71,7 @@ import NavBar from '@/components/NavBar.vue'
 export default {
   name: 'App',
   components: {
-    NavBar,
-  },
+    NavBar
+  }
 }
 </script>
