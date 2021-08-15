@@ -6,6 +6,7 @@
         color ? `color:${color}` : '',
         weight ? `font-weight:${weight}` : ''
       ]"
+      :aria-label="label"
     >
       <slot></slot>
     </button>
@@ -32,6 +33,10 @@ export default {
     loading: {
       type: Boolean,
       default: false
+    },
+    label: {
+      type: String,
+      default: ''
     }
   }
 }

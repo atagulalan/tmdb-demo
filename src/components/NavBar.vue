@@ -17,23 +17,23 @@
       <div class="userSection">
         <ul>
           <li class="new">
-            <button>
+            <button aria-label="Add Show">
               <font-awesome-icon icon="plus" :style="{ fontSize: '18px' }" />
             </button>
           </li>
           <li class="languageSelector">
-            <button class="box">EN</button>
+            <button aria-label="Language" class="box">EN</button>
           </li>
           <li class="notifications">
-            <button>
+            <button aria-label="Notifications">
               <font-awesome-icon icon="bell" :style="{ fontSize: '16px' }" />
             </button>
           </li>
           <li class="avatar">
-            <button class="mockAvatar">AG</button>
+            <button aria-label="Avatar" class="mockAvatar">AG</button>
           </li>
           <li class="search">
-            <button>
+            <button aria-label="Search">
               <font-awesome-icon
                 icon="search"
                 :style="{ color: '#01B4E4', fontSize: '21px' }"
@@ -137,6 +137,7 @@ export default {
         background: rgba(var(--accountTeal), 1);
         border-radius: 50%;
         font-weight: 900;
+        color: black;
       }
 
       .languageSelector .box {

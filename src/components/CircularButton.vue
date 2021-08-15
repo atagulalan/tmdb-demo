@@ -7,6 +7,7 @@
         weight ? `font-weight:${weight}` : '',
         width ? `width:${width}` : ''
       ]"
+      :aria-label="label"
     >
       <slot></slot>
     </button>
@@ -36,6 +37,10 @@ export default {
     loading: {
       type: Boolean,
       default: false
+    },
+    label: {
+      type: String,
+      default: ''
     }
   }
 }

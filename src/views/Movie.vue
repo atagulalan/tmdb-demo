@@ -47,16 +47,16 @@
             size="4"
           />
           <span class="userScoreText"> User<br />Score </span>
-          <CircularButton>
+          <CircularButton label="List">
             <font-awesome-icon icon="list" :style="{ fontSize: '12px' }" />
           </CircularButton>
-          <CircularButton>
+          <CircularButton label="Favorite">
             <font-awesome-icon icon="heart" :style="{ fontSize: '12px' }" />
           </CircularButton>
-          <CircularButton>
+          <CircularButton label="Bookmark">
             <font-awesome-icon icon="bookmark" :style="{ fontSize: '12px' }" />
           </CircularButton>
-          <CircularButton>
+          <CircularButton label="Rate">
             <font-awesome-icon icon="star" :style="{ fontSize: '12px' }" />
           </CircularButton>
           <router-link :to="`#`">
@@ -67,7 +67,7 @@
         <div class="tagLine">
           {{ data.tagline }}
         </div>
-        <h3>Overview</h3>
+        <h2>Overview</h2>
         <p>{{ data.overview }}</p>
       </div>
     </div>
@@ -287,7 +287,7 @@ export default {
         font-size: 1.1em;
       }
 
-      h3 {
+      h2 {
         font-size: 1.3em;
         font-weight: 600;
         margin: 10px 0;
